@@ -1,0 +1,21 @@
+{% extends "model-page.html" %}
+
+{% block content %}
+    <h2>Agendamentos</h2>
+    <a href="evento/">
+        <button type="button">Novo evento</button>
+    </a>
+    <br><br>
+    <u1>
+        {% for even in eventos %}
+         <div style= {% if even.evento_atrasado %}
+                                "color:red"
+                            {% endif %}>
+            <li>+ {{even.titulo}} - {{even.get_data_evento}}
+                    ( <a href="evento/?id={{ even.id }}">Editar</a>
+                    / <a href="evento/delete/{{ even.id }}">Excluir</a> )
+            </li>
+         </div>
+        {% endfor %}
+    </u1>
+{% endblock %}
