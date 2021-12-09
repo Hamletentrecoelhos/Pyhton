@@ -11,7 +11,7 @@ Pomodoro:
 A time marker for productivity per terminal.
 Um marcador de tempo para produtividade por terminal.
 
-hello_django:
+Cursoemvideo/InovaOne:
 A web application to schedule events.
 Uma aplicação web para marcar eventos.
 
